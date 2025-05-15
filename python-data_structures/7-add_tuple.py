@@ -16,4 +16,3 @@ def create_updated_tuple(tpl=()):
         return tuple(tmp)
 
     return tpl
-
