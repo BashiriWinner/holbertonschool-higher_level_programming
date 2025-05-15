@@ -5,4 +5,3 @@ def new_in_list(my_list, idx, element):
         new[idx] = element
         return new
     return my_list[0:]
-
