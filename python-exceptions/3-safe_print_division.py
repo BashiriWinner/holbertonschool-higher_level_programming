@@ -9,4 +9,3 @@ def safe_print_division(a, b):
             print("Inside result: {}".format(a / b))
         except ZeroDivisionError:
             print("Inside result: {}".format(None))
-
