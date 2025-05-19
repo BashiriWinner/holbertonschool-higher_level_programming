@@ -23,4 +23,3 @@ def roman_to_int(roman_string):
             i += 1
 
     return result
-
