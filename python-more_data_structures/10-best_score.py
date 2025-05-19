@@ -4,4 +4,3 @@ def best_score(a_dictionary):
         return max(zip(a_dictionary.values(), a_dictionary.keys()))[1]
     else:
         return None
-
