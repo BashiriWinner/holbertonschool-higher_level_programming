@@ -9,4 +9,3 @@ class Square:
     squre class is empty
     '''
     pass
-
