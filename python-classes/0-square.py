@@ -6,6 +6,6 @@ this module 0-square right now it is empty
 
 class Square:
     '''
-    squre class is empty
+    square class is empty
     '''
     pass
