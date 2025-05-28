@@ -83,4 +83,3 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
-
