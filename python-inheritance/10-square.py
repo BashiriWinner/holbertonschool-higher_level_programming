@@ -39,4 +39,3 @@ class Square(Rectangle):
             str: String in the format [Rectangle] <width>/<height>
         """
         return "[Rectangle] {}/{}".format(self.__size, self.__size)
-
