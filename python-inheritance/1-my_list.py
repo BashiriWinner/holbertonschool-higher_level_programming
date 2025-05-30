@@ -25,4 +25,3 @@ class MyList(list):
             - The original list remains unchanged.
         """
         print(sorted(self))
-        
