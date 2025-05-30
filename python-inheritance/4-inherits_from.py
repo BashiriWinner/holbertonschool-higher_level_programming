@@ -17,4 +17,3 @@ def inherits_from(obj, a_class):
           but not an instance of a_class itself.
     """
     return isinstance(obj, a_class) and type(obj) is not a_class
-
