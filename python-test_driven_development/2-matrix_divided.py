@@ -26,4 +26,3 @@ def matrix_divided(matrix, div):
                 raise TypeError(error)
             new_matrix[i][j] = round(new_matrix[i][j] / div, 2)
     return new_matrix
-
