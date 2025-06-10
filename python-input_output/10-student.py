@@ -13,4 +13,3 @@ class Student:
         if not isinstance(attrs, list):
             return self.__dict__
         return {key: getattr(self, key) for key in attrs if hasattr(self, key)}
-
