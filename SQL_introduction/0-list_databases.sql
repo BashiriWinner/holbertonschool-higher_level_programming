@@ -1,2 +1,2 @@
-SELECT name
-FROM information_schema.tables;
+SHOW DATABASES;
+
