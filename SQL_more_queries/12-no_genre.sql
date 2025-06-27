@@ -2,4 +2,5 @@
 SELECT tv_shows.title, tv_show_genres.genre_id
 FROM tw_shows
 LEFT JOIN tv_show_genres.genre_id ON tw_shows.id = tv_show_genres.show.id
-ORDER BY tv_shows.title, tv_show_genres.genre_id ASC;
+WHERE tv_show-genres.genre_id IS NULL
+ORDER BY tv_shows.title, tv_show_genres.genre_id;
