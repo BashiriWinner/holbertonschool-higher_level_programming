@@ -2,7 +2,6 @@
 """This script connects to the hbtn_0e_0_usa database and lists all states
 with a name starting with 'N' from the states table, sorted by id in ascending order."""
 
-
 import MySQLdb
 import sys
 
@@ -23,6 +22,4 @@ if __name__ == "__main__":
 
     cursor.close()
     db.close()
-
-
 
