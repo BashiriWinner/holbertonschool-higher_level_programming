@@ -13,7 +13,7 @@ if __name__ == "__main__":
     db = mySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=databse)
 
     cursor = db.cursor()
-    cursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC)
+    cursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
 
     rows = cursor.fetchall()
 
