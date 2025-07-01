@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """This script safely connects to the hbtn_0e_4_usa database 
 and lists all cities of a user-specified state, 
 sorted by city id in ascending order."""
