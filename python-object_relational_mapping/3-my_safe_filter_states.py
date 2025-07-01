@@ -13,7 +13,7 @@ if __name__ == "__main__":
     cursor.execute("SELECT id, name FROM states WHERE name = %s ORDER BY id ASC")
 
     for state in cursor.fetchall():
-        if state[1] = argv[4]:
+        if state[1] == argv[4]:
             print(state)
 
     cursor.close()
