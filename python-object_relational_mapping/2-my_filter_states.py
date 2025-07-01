@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This script connects to the hbtn_0e_0_usa database and lists all states
-with a name matching the user-provided argument, 
+with a name matching the user-provided argument,
 sorted by id in ascending order."""
 
 if __name__ == "__main__":
