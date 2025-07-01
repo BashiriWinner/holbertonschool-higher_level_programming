@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""This script safely connects to the hbtn_0e_0_usa database and lists all states
-with a name matching the user-provided argument, sorted by id in ascending order."""
+"""
+Connecting to database and listing it
+
+"""
 
 if __name__ == "__main__":
     from sys import argv
