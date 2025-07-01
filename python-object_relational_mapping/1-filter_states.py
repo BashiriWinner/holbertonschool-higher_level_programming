@@ -5,11 +5,8 @@ with a name starting with 'N' from the states table, sorted by id in ascending o
 if __name__ == "__main__":
     from sys import argv
     import MySQLdb
-    username = sys.argv[1]
-    password = sys.argv[2]
-    database = sys.argv[3]
 
-    db = mySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=databse)
+    db = mySQLdb.connect(user=argv[1], passwd=argv[2], database[3])
 
     cursor = db.cursor()
     cursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
