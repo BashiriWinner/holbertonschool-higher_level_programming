@@ -9,12 +9,12 @@ if __name__ == "__main__":
     db = mySQLdb.connect(user=argv[1], passwd=argv[2], database=argv[3])
 
     cursor = db.cursor()
+
     cursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
 
-    rows = cursor.fetchall()
-
-    for row in rows:
-    print(row)
+    for state in cursor.fetchall():
+        if state[1][0] == "N":
+            print(state)
 
     cursor.close()
     db.close()
