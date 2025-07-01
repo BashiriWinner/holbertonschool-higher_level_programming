@@ -5,7 +5,7 @@ from the states table, sorted by id in ascending order."""
 
 if __name__ == "__main__":
     import MySQLdb
-   from sys import argv
+    from sys import argv
 
     db = MySQLdb.connect(user=argv[1], passwd=argv[2], database=argv[3])
 
