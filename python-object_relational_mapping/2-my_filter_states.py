@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    cursor.execute("Select id, name FROM states \
+    cursor.execute("Select * FROM states \
                    WHERE name = '{}' ORDER BY id ASC".format(argv[4]))
 
     for state in cursor.fetchall():
@@ -19,3 +19,4 @@ if __name__ == "__main__":
 
     cursor.close()
     db.close()
+
