@@ -2,7 +2,7 @@
 """This script safely connects to the hbtn_0e_0_usa database and lists all states
 with a name matching the user-provided argument, sorted by id in ascending order."""
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     from sys import argv
     import MySQLdb
 
