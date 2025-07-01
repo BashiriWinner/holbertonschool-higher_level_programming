@@ -6,7 +6,7 @@ if __name__ == "__main__":
     from sys import argv
     import MySQLdb
 
-    db = mySQLdb.connect(user=argv[1], passwd=argv[2], database[3])
+    db = mySQLdb.connect(user=argv[1], passwd=argv[2], database=argv[3])
 
     cursor = db.cursor()
     cursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
