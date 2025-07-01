@@ -9,7 +9,8 @@ if __name__ == '__main__':
     db = MySQLdb.connect(user=argv[1], password=argv[2], database=argv[3])
 
     cursor = db.cursor()
-    cursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    cursor.execute("SELECT id, name FROM states \
+                   WHERE name LIKE 'N%' ORDER BY id ASC")
 
     for state in cursor.fetchall():
         if state[1][0] == "N":
