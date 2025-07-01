@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    cursor.execute("Select id, name FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name))
+    cursor.execute("Select id, name FROM states WHERE name = '{}' ORDER BY id ASC".format(statename))
 
     for state in cursor.fetchall():
         print(state)
