@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-"""
-Connecting to database and listing it
-
-"""
+"""This script safely connects to the hbtn_0e_0_usa database and lists all states
+with a name matching the user-provided argument, sorted by id in ascending order."""
 
 if __name__ == "__main__":
     from sys import argv
@@ -12,7 +10,7 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    cursor.execute("SELECT id, name FROM states WHERE name = %s ORDER BY id ASC")
+    cursor.execute("SELECT * FROM 'states' ORDER BY id")
 
     for state in cursor.fetchall():
         if state[1] == argv[4]:
