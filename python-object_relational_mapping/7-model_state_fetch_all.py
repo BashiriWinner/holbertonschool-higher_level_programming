@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This script lists all State objects 
+"""This script lists all State objects
 from the hbtn_0e_6_usa database
 using SQLAlchemy, sorted by id in ascending order."""
 
@@ -11,8 +11,6 @@ from sys import argv
 if __name__ == "__main__":
     engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}"
                            .format(argv[1], argv[2], argv[3]))
-
-
     Base.metadata.create_all(engine)
 
     Session = sessionmaker(bind=engine)
