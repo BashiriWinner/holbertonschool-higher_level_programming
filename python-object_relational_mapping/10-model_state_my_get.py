@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This script prints the State object's id with the given name
+"""This script prints the State
+object's id with the given name
 from the hbtn_0e_6_usa database using SQLAlchemy."""
 
 from sqlalchemy import create_engine
