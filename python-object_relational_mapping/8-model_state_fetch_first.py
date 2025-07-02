@@ -3,6 +3,7 @@
 from the hbtn_0e_6_usa database
 using SQLAlchemy, based on the lowest id."""
 
+from sqlalchemy.orm import sessionmaker
 from sqlalchemy import crate_engine
 from sys import argv
 from model_state import Base, State
