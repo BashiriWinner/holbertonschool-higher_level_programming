@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This script prints the first State object 
+"""This script prints the first State object
 from the hbtn_0e_6_usa database
 using SQLAlchemy, based on the lowest id."""
 
@@ -23,4 +23,3 @@ if __name__ == "__main__":
         print("Nothing")
 
     session.close()
-
