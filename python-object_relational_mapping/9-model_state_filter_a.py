@@ -25,7 +25,6 @@ if __name__ == "__main__":
                 State.id
                 ) if 'a' in state.name]
 
-    session.close()
 
 
 
