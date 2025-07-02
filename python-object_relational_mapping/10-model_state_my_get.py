@@ -2,8 +2,8 @@
 """This script prints the State object's id with the given name
 from the hbtn_0e_6_usa database using SQLAlchemy."""
 
-from sys import argv
 from sqlalchemy import create_engine
+from sys import argv
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     if state is None:
         print("Not found")
     else:
-        print("state.id")
+        print(state.id)
 
     session.close()
 
