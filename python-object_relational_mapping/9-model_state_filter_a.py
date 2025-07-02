@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""This script lists all State objects 
+"""This script lists all State objects
 with a name containing the letter 'a'
-from the hbtn_0e_6_usa database 
+from the hbtn_0e_6_usa database
 using SQLAlchemy, sorted by id."""
 
 from sqlalchemy import create_engine
@@ -24,6 +24,3 @@ if __name__ == "__main__":
         print("{}: {}".format(state.id, state.name))
 
         session.close()
-
-
-
