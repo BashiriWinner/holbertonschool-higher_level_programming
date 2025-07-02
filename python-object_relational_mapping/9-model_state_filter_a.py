@@ -18,10 +18,10 @@ if __name__ == "__main__":
 
     state = session.query(State).filter(State.name.like('%a%')).order_by(state.id).all()
 
-    if state in None:
-        print("Nothing")
-    else:
-        print("1: {}".format(state.name))
+    for state in (session.query(State)
+                  .filter(State.name.like('%a%'))
+                  .order_by(State.id)):
+        print("{}: {}".format(state.id, state.name))
 
     session.close()
 
