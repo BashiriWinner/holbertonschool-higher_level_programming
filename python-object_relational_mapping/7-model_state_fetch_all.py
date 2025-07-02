@@ -3,7 +3,7 @@
 from the hbtn_0e_6_usa database
 using SQLAlchemy, sorted by id in ascending order."""
 
-import SQLAlchemy
+from SQLAlchemy import create_engine
 from model_state import Base, State
 from sys import argv
 
