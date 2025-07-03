@@ -17,7 +17,7 @@ if __name__ == "__main__":
     states_to_delete = session.query(State).filter(State.name.ilike('%a%')).all()
     for state in states_to_delete:
         session.delete(state)
-        session.commit()
+    session.commit()
 
-        session.close()
+    session.close()
 
