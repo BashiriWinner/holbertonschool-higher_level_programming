@@ -3,8 +3,8 @@
 from the hbtn_0e_14_usa database."""
 
 from sys import argv
-from model_state import State
-from model_city import Base, City
+from model_state import State as s
+from model_city import Base, City as c
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -14,14 +14,11 @@ if __name__ == "__main__":
                            .format(argv[1], argv[2], argv[3]))
 
     Session = sessionmaker(bind=engine)
-    session = Session()
+    ses = Session()
 
-    results = session.query(City, 
-                            State).join(State,
-                                        City.state_id == State.id)
-                            .order_by(City.id).all()
-    for city, state in results:
+    r = ses.query(c,s).join(s,c.state_id == s.id).order_by(c.id).all()
+    for city, state in r:
         print(f"{state.name}: ({city.id}) {city.name}")
 
-    session.close()
+    ses.close()
 
