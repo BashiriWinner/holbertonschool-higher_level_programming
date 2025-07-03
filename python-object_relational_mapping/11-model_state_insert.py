@@ -10,6 +10,8 @@ if __name__ == "__main__":
     engine = create.engine("mysql+mysqldb://{}:{}@localhost:3306/{}"
                            .format(argv[1], argv[2], argv[3]))
 
+    Base.metadata.create_all(engine)
+
     Session = sessionmaker(bind=engine)
     session = Session()
 
@@ -20,4 +22,5 @@ if __name__ == "__main__":
     print(new_state.id)
 
     session.close()
+
 
