@@ -7,15 +7,12 @@ if __name__ == "__main__":
     from sys import argv
     import MySQLdb
 
-    db = MySQLdb.connect(user=argv[1], passwd=argv[2], database=argv[3])
-
+    db = MySQLdb.connect(user=argv[1], password=argv[2], database=argv[3])
     cursor = db.cursor()
-    query = "SELECT id, name FROM states WHERE BINARY name = %s ORDER BY id ASC"
-    cursor.execute(query, (state_name,))
-    states = cursor.fetchall()
+    cursor.execute("SELECT * FROM 'states'")
 
-    for state in cursor.fetchall():
-        print(state)
+    [print(state) for state in cursor.fetchall() if state[1] == argv[4]]
+
 
     cursor.close()
     db.close()
