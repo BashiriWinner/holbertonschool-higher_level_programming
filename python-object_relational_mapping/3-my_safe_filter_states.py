@@ -17,6 +17,6 @@ if __name__ == "__main__":
         if state[1] == argv[4]:
             print(state)
 
-
     cursor.close()
     db.close()
+
