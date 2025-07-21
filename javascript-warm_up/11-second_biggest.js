@@ -6,4 +6,4 @@ if (args.length <= 1) {
 } else {
   const sorted = numbers.sort((a, b) => b - a);
   console.log(sorted[1]);
- }
+}
