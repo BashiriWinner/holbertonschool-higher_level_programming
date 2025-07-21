@@ -7,3 +7,5 @@ function factorial(n) {
   }
   return num * factorial(num - 1);
 }
+console.log(factorial(n));
+
