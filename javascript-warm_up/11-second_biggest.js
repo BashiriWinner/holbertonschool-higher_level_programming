@@ -7,3 +7,4 @@ if (args.length <= 1) {
    const sorted = numbers.sort((a, b) => b - a);
    console.log(sorted[1]);
    }
+   
