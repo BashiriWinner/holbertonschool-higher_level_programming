@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 """
 Fetches https://intranet.hbtn.io/status with custom header to bypass firewall.
 """
