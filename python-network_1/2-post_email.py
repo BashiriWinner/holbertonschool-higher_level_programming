@@ -10,13 +10,10 @@ import sys
 
 
 def send_post_email(url, email):
-    # email parametrini POST gövdəsinə çeviririk
     data = urllib.parse.urlencode({'email': email}).encode('utf-8')
 
-    # POST sorğusu yaradırıq
     req = urllib.request.Request(url, data=data, method='POST')
 
-    # Sorğunu göndəririk və cavabı alırıq
     with urllib.request.urlopen(req) as response:
         body = response.read().decode('utf-8')
 
@@ -24,6 +21,6 @@ def send_post_email(url, email):
 
 
 if __name__ == "__main__":
-    url = sys.argv[1]      # birinci arqument – URL
-    email = sys.argv[2]    # ikinci arqument – email
+    url = sys.argv[1]      
+    email = sys.argv[2]
     send_post_email(url, email)
