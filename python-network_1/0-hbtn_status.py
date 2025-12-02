@@ -4,7 +4,7 @@ Fetches https://intranet.hbtn.io/status with custom header to bypass firewall.
 """
 
 import urllib.request
-  def fetch_status():
+def fetch_status():
     url = 'https://intranet.hbtn.io/status'
     req = urllib.request.Request(url)
     req.add_header('cfclearance', 'true')
